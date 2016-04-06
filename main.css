@@ -82,13 +82,13 @@ body {
 
 /* ICONS */
 .side-menu__dismiss, .side-menu__links__option__preorder, .side-menu__links__option__more, .side-menu__social__fb, .side-menu__social__twt, .side-menu__social__utb {
-  background-image: url('../images/icon-sprite.jpg');
+  background-image: url('images/icon-sprite.jpg');
   background-repeat: no-repeat;
   display: inline-block;
 }
 
 .header__menu__opener__icon {
-  background-image: url('../images/hamburger.png');
+  background-image: url('images/hamburger.png');
   background-repeat: no-repeat;
   height: 15px;
   width: 15px;
@@ -180,11 +180,11 @@ body {
   }
 
   .side-menu--opened {
-    width: 20%;
+    width: 350px;
   }
 
   .side-menu__overlay {
-    left: 20%;
+    left: 350px;
   }
 
 
