@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'myFont';
+  src: url('./fonts/OpenSans-Semi_Bold.eot') format('embedded-opentype'),
+    url('./fonts/OpenSans-Semi_Bold.woff') format('woff'),
+    url('./fonts/OpenSans-Semi_Bold.ttf') format('truetype'),
+    url('./fonts/OpenSans-Semi_Bold.svg') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a1b8ca;
+  font-family: 'myFont', sans-serif;
+}
+
+.header {
+  width: 100%;
+  background: #000;
+}
+
+.header__menu {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
+  padding: 15px 20px;
+  min-height: 25px;
+}
+
+.header__menu__opener {
+  float: right;
+}
+
+.header__menu__row {
+  display: none;
+}
+
+.side-menu {
+  display: none;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: black;
+}
+
+.side-menu--opened {
+  display: block;
+  width: 100%;
+}
+
+.side-menu__overlay {
+  display: none;
+}
+
+.side-menu__links {
+  list-style-type: none;
+  text-transform: uppercase;
+  margin-top: 95px;
+  padding: 0;
+  font-size: 18px;
+}
+
+.side-menu__links__option {
+  border-bottom: 2px solid #323232;
+  padding: 25px 0;
+  margin: 0 20px;
+}
+
+.side-menu__social {
+  margin-left: 20px;
+}
+
+.side-menu__social__btn {
+  margin-right: 10px;
+}
+
+/* ICONS */
+.side-menu__dismiss, .side-menu__links__option__preorder, .side-menu__links__option__more, .side-menu__social__fb, .side-menu__social__twt, .side-menu__social__utb {
+  background-image: url('../images/icon-sprite.jpg');
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.header__menu__opener__icon {
+  background-image: url('../images/hamburger.png');
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 15px;
+  float: right;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.side-menu__dismiss {
+  height: 20px;
+  width: 20px;
+  background-position: -10px -10px;
+  float: right;
+  margin: 35px;
+}
+
+.side-menu__links__option__preorder {
+  height: 30px;
+  width: 30px;
+  background-position: -10px -35px;
+  float: right;
+  margin-right: 15px;
+}
+
+.side-menu__links__option__more {
+  height: 30px;
+  width: 30px;
+  background-position: -10px -65px;
+  float: right;
+  margin-right: 15px;
+}
+
+.side-menu__social__fb {
+  height: 45px;
+  width: 40px;
+  background-position: -10px -95px;
+}
+
+.side-menu__social__twt {
+  height: 45px;
+  width: 40px;
+  background-position: -10px -145px;
+}
+
+.side-menu__social__utb {
+  height: 45px;
+  width: 40px;
+  background-position: -10px -195px;
+}
+
+/* TABLET SIZES */
+@media (min-width: 768px) {
+  .header__menu__row {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header__menu__row__option {
+    display: inline-block;
+    margin-left: 45px;
+  }
+
+  .header__menu__opener {
+    float: left;
+    margin-left: 20px;
+  }
+
+  .side-menu--opened {
+    width: 45%;
+  }
+
+  .side-menu__overlay {
+    position: fixed;
+    top: 0;
+    left: 45%;
+    bottom: 0;
+    right: 0;
+    display: block;
+    background: rgba(0,0,0,0.74);
+  }
+
+}
+
+@media (min-width: 992px) {
+  .header {
+    background: transparent;
+  }
+
+  .side-menu--opened {
+    width: 20%;
+  }
+
+  .side-menu__overlay {
+    left: 20%;
+  }
+
+
+}
