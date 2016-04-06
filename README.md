@@ -21,7 +21,6 @@ The exercise took about 2hs and 45min.
 These are some of the first steps I would consider
 
 * Add animations/transitions and hover styles if it was specified in the requirements documentation.
-* Add a MVC framework such as AngularJS to give life to the application.
 * Use SCSS/Compass to manage the sprites, separate variables and use extends/mixings appropriately.
 
 0. Anything else you'd like us to know?
